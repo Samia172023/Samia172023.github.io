@@ -1,7 +1,9 @@
- // Log a greeting to the console
- function logGreeting() {
-    var nameInput = document.getElementById("nameInput");
-    var name = nameInput.value;
-    var message = getName(name);
-    console.log(message);
-  }
+(function(window) {
+	var speakWord = "Good Bye";
+	var byeSpeaker = function (name) {
+  		console.log(speakWord + " " + name);
+	}
+	
+	window.byeSpeaker = byeSpeaker;
+
+})(window);
